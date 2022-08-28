@@ -1,0 +1,108 @@
+.cards {
+    margin: auto;
+    padding: 1rem;
+}
+
+.blogcard {
+    background-color: var(--white);
+    color: var(--black);
+    height: auto;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    position:relative;
+    text-align: left;
+}
+    .blog-tag {
+        background-color: var(--black);
+        color: var(--white);
+        font-family: 'sans work',sans-serif;
+        font-size: 0.7rem;
+        left: 5%;
+        padding: 0.5rem 1rem;
+        position:absolute;
+        text-transform: uppercase;
+        top: 310px;
+    }
+
+    .blog-image {
+        height: 350px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+        .blog-image[dataset="1"] {
+            background-image: url('../../img/blog_3.jpg');
+        }
+
+        .blog-image[dataset="2"] {
+            background-image: url('../../img/blog_2.jpg');
+        }
+
+        .blog-image[dataset="3"] {
+            background-image: url('../../img/blog_1.jpg');
+        }
+
+        .blog-image[dataset="4"] {
+            background-image: url('../../img/blog_4.jpg');
+        }
+
+    .blog-posttitle {
+        font-family: 'playfair-display', serif;;
+        font-size: 1.5rem;
+        font-weight: 550;
+        padding: 1rem 1.8rem;
+    }
+
+    .blog-date {
+        font-family: 'sans work',sans-serif;;
+        font-size: 0.7rem;
+        padding: 0.2rem 1.8rem;
+        text-transform: uppercase;
+    }
+
+    .blog-text {
+        font-family: 'sans work',sans-serif;;
+        font-size: 0.7rem;
+        overflow-y: hidden;
+        line-height: 1.7;
+        padding: 0.5rem 1.8rem 0 1.8rem;
+    }
+
+
+
+@media (min-width: 768px) {
+    
+    .cards {
+        width: 75%;
+    }
+
+
+    .blog-posttitle {
+        font-family: 'playfair-display', serif;;
+        font-size: 1.5rem;
+        font-weight: 550;
+        padding: 1rem 1.8rem;
+    }
+
+    .blog-date {
+        font-family: 'sans work',sans-serif;;
+        font-size: 0.7rem;
+        padding: 0.2rem 1.8rem;
+        text-transform: uppercase;
+    }
+
+    .blog-text {
+        font-family: 'sans work',sans-serif;;
+        font-size: 0.7rem;
+        overflow-y: hidden;
+        line-height: 1.7;
+        padding: 0.5rem 1.8rem 0 1.8rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    
+    .cards {
+        width: 60%;
+    }
+}

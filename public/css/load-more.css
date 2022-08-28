@@ -1,0 +1,30 @@
+.load {
+display: flex;
+justify-items: center;
+background:white;
+}
+
+.load-more {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    color:var(--graymedium);
+    cursor: pointer;
+    display: block;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    padding: 1.5rem;
+    text-transform: uppercase;
+    width: 100vw;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+@media (min-width: 1024px) {
+
+
+    .load {
+        width: 58%;
+        margin-bottom: 1rem;
+    }
+}

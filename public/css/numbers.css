@@ -1,0 +1,86 @@
+.numbers {
+    background-image: url('../img/bg-pattern.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--white);
+}
+
+    .numbers-collection {
+        display: grid;
+        justify-content: center;
+        padding: 5rem 2rem 5rem 3rem;
+    }
+
+        .number-data{
+            display: flex;
+            padding-top: 1rem;
+            text-align: left;
+        }
+
+        .numbers-logo{
+            color: inherit;
+            font-size: 40px;
+            margin-right: 1rem;
+        }
+
+        .numbers-text{
+            font-family: 'sans work', sans-serif;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            font-weight: 300;
+            padding-bottom: 0.6rem;
+        }
+
+@media (min-width: 768px) {
+
+    .numbers-collection {
+        margin: auto;
+        grid-template-columns:repeat(2, 1fr);
+        grid-template-rows:repeat(2,1fr);
+        grid-template-areas:
+        "number1 number2"
+        "number3 number4";
+        justify-content: center;
+        align-items: center;
+    }
+
+        .number1{
+            grid-area: "number1";
+        }
+
+        .number2{
+            grid-area: "number2";
+        }
+
+        .number3{
+            grid-area: "number3";
+        }
+
+        .number4{
+            grid-area: "number4";
+        }
+
+
+        .number-data{
+            display: flex;
+            padding-top: 1rem;
+            text-align: left;
+            padding-left: 25%;
+        }
+
+}
+
+@media (min-width: 1024px) {
+
+    .numbers-collection {
+        margin: auto;
+        grid-template-columns:repeat(4, 1fr);
+        grid-template-rows:repeat(1,1fr);
+        grid-template-areas:
+        "number1 number2 number3 number4";
+        justify-content: center;
+        align-items: center;
+    }
+
+}

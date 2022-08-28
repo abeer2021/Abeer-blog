@@ -1,0 +1,87 @@
+.testimonials {
+    background-image: url('../img/bg-pattern.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--white);
+    padding: 5rem 2rem 5rem 3rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 420px;
+}
+
+.testimonial p{
+    font-family: 'playfair display', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    opacity: 1;
+    transition: opacity 2s;
+}
+
+.testimonial cite{
+    font-family: 'sans work', sans-serif;
+    text-transform: uppercase;
+}
+
+.testimonials nav {
+    padding-top: 1.5rem;
+}
+
+        .slider {
+            color: var(--graymedium);
+            cursor: pointer;
+
+        }
+
+        .slider-active {
+            color: var(--white);
+            cursor: pointer;
+        }
+
+        .fade {
+            opacity: 0.5;
+        }
+
+@media (min-width: 768px) {
+
+    .testimonials {
+        min-height: 380px;
+    }
+
+    
+    .testimonial p{
+        margin: auto;
+        width: 75%;
+        font-size: 1.4rem;
+        line-height: 1.6;
+        padding-bottom: 1rem;
+    }
+
+    .testimonial cite{
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .testimonials {
+        min-height: 0px;
+    }
+
+    .testimonial p{
+        margin: auto;
+        width: 50%;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        padding-bottom: 1rem;
+    }
+
+    .testimonial cite{
+        font-size: 0.7rem;
+    }
+
+}

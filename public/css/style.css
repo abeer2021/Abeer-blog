@@ -1,0 +1,22 @@
+:root {
+    --graylight: #fafafa;
+    --graylight2: #e9e9e9;
+    --graymedium: #c7c7c7;
+    --graymedium2: #707070;
+    --graydark: #2c2c2c;
+    --white: #fff;
+    --black: #0a0a0a;
+}
+
+.container {
+    max-width: 1200px;
+    margin:auto;
+}
+
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -90px; /*offset do header*/
+    visibility: hidden;
+}

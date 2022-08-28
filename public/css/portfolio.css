@@ -1,0 +1,174 @@
+.portfolio {
+    margin: 3rem 1rem 5rem 1rem;
+    text-align: center;
+
+}
+.port-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.3rem;
+    font-weight: 600;
+    line-height: 1.3;
+    padding-bottom: 1rem;
+}
+
+.port-text {
+    font-family: 'work sans', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 1.8;
+    padding-bottom: 2rem;
+}
+
+.projects{
+    max-height: 800px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: -10;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+    .projects::-webkit-scrollbar {
+        display: none;
+    }
+
+    .portfolio-name {
+        display: none;
+    }
+
+    .portfolio-item {
+        display: block;
+        position: relative;
+        margin: auto;
+        margin-bottom: 10px;
+        width: 100vw;
+        height: 100vw;
+        background-color: var(--graylight);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+        .portfolio-item[dataset="1"] {
+            background-image: url('../img/portfolio_mountain.jpg');
+        }
+
+        .portfolio-item[dataset="2"] {
+            background-image: url('../img/portfolio_mist.jpg');
+        }
+
+        .portfolio-item[dataset="3"] {
+            background-image: url('../img/portfolio_sea.jpg');
+        }
+
+        .portfolio-item[dataset="4"] {
+            background-image: url('../img/portfolio_dive.jpg');
+        }
+
+        .portfolio-item[dataset="5"] {
+            background-image: url('../img/portfolio_waterfal.jpg');
+        }
+
+        .portfolio-item[dataset="6"] {
+            background-image: url('../img/portfolio_wedding.jpg');
+        }
+
+        .portfolio-item[dataset="7"] {
+            background-image: url('../img/portfolio_mist.jpg');
+        }
+
+        .portfolio-item[dataset="8"] {
+            background-image: url('../img/portfolio_mountain.jpg');
+        }
+
+        .portfolio-item[dataset="9"] {
+            background-image: url('../img/portfolio_wedding2.jpg');
+        }
+
+@media (min-width: 768px) {
+    
+    .port-text {
+        margin: auto;
+        width: 75%;
+        font-size: 0.9rem;
+        line-height: 1.7;
+    }
+
+    .projects{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        justify-content: center;
+        align-items: center;
+        max-height: 600px;
+    }
+
+    .portfolio-item[dataset="9"] {
+        display:none;
+    }
+
+    .portfolio-item {
+        height: 360px;
+        width: 380px;
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .port-text {
+        margin: auto;
+        width: 50%;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .projects{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        max-height: none;
+    }
+
+    .portfolio-item[dataset="9"] {
+        display:block;
+    }
+
+    .portfolio-item {
+        height: 380px;
+        width: 380px;
+        background-size: cover;
+        margin-bottom: 20px;
+        position: relative;
+    }
+        .portfolio-item:hover .portfolio-name::after {
+            content: "";
+            background-color: black;
+            opacity: 0.6;
+            position: absolute;
+            top:0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+
+        .portfolio-name {
+            color: var(--white);
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            line-height: 1.3;
+            padding-bottom: 1rem;
+            padding-top: 47%;
+        }
+
+        .portfolio-item:hover .portfolio-name {
+            display: block;
+        }
+
+}
